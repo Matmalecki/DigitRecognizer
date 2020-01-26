@@ -82,7 +82,7 @@ def prediction_evaluation(model, X_test, Y_test):
 
     predictions = np.argmax(model.predict(X_test),axis=1)
     cnf_matrix = confusion_matrix(Y_test, predictions)
-    #plot_confusion_matrix_from_data(y_test=Y_test, predictions=predictions, columns=[0,1,2,3,4,5,6,7,8,9])
+    plot_confusion_matrix_from_data(y_test=Y_test, predictions=predictions, columns=[0,1,2,3,4,5,6,7,8,9])
     print(cnf_matrix)
 
     #accuracy

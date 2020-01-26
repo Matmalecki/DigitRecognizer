@@ -1,7 +1,6 @@
+
 from sklearn.tree import DecisionTreeClassifier
-import numpy as np
 from sklearn.metrics import confusion_matrix
-from keras.utils import np_utils
 from pretty_plot import plot_confusion_matrix_from_data
 
 def execute(X_train, Y_train, X_test, Y_test):
